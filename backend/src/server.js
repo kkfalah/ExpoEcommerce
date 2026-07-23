@@ -17,6 +17,7 @@ app.use(clerkMiddleware());
 
 app.use("/api/inngest", serve({client: inngest, functions }));
 
+
 app.get("/api/health", (req, res) => {
     res.status(200).json({message: "Success"});
 });
